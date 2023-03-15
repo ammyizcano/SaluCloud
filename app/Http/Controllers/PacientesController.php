@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 
 class PacientesController extends Controller
 {
-    public function patients () {
+    public function patients (Request $request) {
 
 
-        $access_token ="";
+        $access_token ="x";
         $page ="1";
         $limit ="10";
         $patient_id ="";
-        $search ="";
+        $search ="xxxxxxx";
        
         $curl = curl_init();
         
@@ -35,19 +35,22 @@ class PacientesController extends Controller
         echo $response;
     }
 
-    public function patients_save () {
+    public function patients_save (Request $request) {
 
 
-      $access_token ="";
-      $page ="1";
-      $limit ="10";
-      $patient_id ="";
-      $search ="";
-     
+      $access_token ="x";
+      $type ="1";
+      $identification ="";
+      $birthdate="";
+      $gender="";
+      $email="";
+      $mobile="";
+    
+      
       $curl = curl_init();
       
       curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://api.salucloud.com/v4/patients/',
+        CURLOPT_URL => 'https://api.salucloud.com/v4/patients/save/',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
@@ -55,12 +58,14 @@ class PacientesController extends Controller
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => 'POST',
-        CURLOPT_POSTFIELDS => array('acess_token'=> $access_token,'page'=> $page, 'limit'=> $limit,'patient_id'=> $patient_id,'search'=> $search,),
+        CURLOPT_POSTFIELDS => array(  'acess_token'=> $access_token,'type'=> $type, 'identification' => $identification, 'birthdate' => $birthdate, 'gender' => $gender, 'email'=> $email, 'mobile'=> $mobile
+      ),
       ));
       
       $response = curl_exec($curl);
       
       curl_close($curl);
       echo $response;
-  }
+      
+}
 }

@@ -16,7 +16,8 @@
         </style>
     </head>
     <body class="antialiased">
-       <form method="POST" action="{{route('invoices')}}">
+       
+       <form method="POST" action="{{route('pacientes')}}">
         @csrf
         <button class="btn btn-info">Login</button>
        </form>
