@@ -223,4 +223,214 @@ class FacturacionController extends Controller
         curl_close($curl);
         echo $response;
     }
+
+    public function branches()
+    {
+
+        $access_token = 'x'; //token de /v4/sessions/
+        $page = '1'; //número de página, valor predeterminado = 1
+        $limit = '10'; //[opcional] Resultados por página, valor predeterminado = 10; valor máximo 100
+        $branch_id = '{{branch_id}}'; //[opcional] Al enviar éste campo los demás filtros son ignorados
+
+        $curl = curl_init();
+
+        curl_setopt_array(
+            $curl,
+            array(
+                CURLOPT_URL => 'https://api.salucloud.com/v4/branches/',
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS => array('access_token' => $access_token, 'page' => $page, 'limit' => $limit),
+            )
+        );
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
+    }
+
+    public function referrers()
+    {
+
+        $access_token = 'x'; //token de /v4/sessions/
+        $page = '1'; //número de página, valor predeterminado = 1
+        $limit = '10'; //[opcional] Resultados por página, valor predeterminado = 10; valor máximo 100
+        $referrer_id = ''; // [opcional] Al enviar éste campo los demás filtros son ignorados
+        $curl = curl_init();
+
+        curl_setopt_array(
+            $curl,
+            array(
+                CURLOPT_URL => 'https://api.salucloud.com/v4/referrers/',
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS => array('access_token' => $access_token, 'page' => $page, 'limit' => $limit),
+            )
+        );
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
+    }
+
+    public function classification()
+    {
+
+        $access_token = 'x'; //token de /v4/sessions/
+        $page = '1'; //número de página, valor predeterminado = 1
+        $limit = '10'; //[opcional] Resultados por página, valor predeterminado = 10; valor máximo 100
+        $classification_id = ''; //[opcional] Al enviar éste campo los demás filtros son ignorados
+
+        $curl = curl_init();
+
+        curl_setopt_array(
+            $curl,
+            array(
+                CURLOPT_URL => 'https://api.salucloud.com/v4/classification/',
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS => array('access_token' => $access_token, 'page' => $page, 'limit' => $limit),
+            )
+        );
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
+    }
+
+    public function price_lists()
+    {
+
+        $access_token = 'x'; //token de /v4/sessions/
+        $page = '1'; //número de página, valor predeterminado = 1
+        $limit = '3'; //[opcional] Resultados por página, valor predeterminado = 10; valor máximo 100
+        $price_list_id = ''; //[opcional]
+
+        $curl = curl_init();
+
+        curl_setopt_array(
+            $curl,
+            array(
+                CURLOPT_URL => 'https://api.salucloud.com/v4/price_lists/',
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS => array('access_token' => $access_token, 'page' => $page, 'limit' => $limit),
+            )
+        );
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
+    }
+
+    public function price_lists_save()
+    {
+        $access_token = 'x'; //token de /v4/sessions/
+        $name = ''; //Nombre
+        $code = ''; //Código único de cliente
+        $curl = curl_init();
+
+        curl_setopt_array(
+            $curl,
+            array(
+                CURLOPT_URL => 'https://api.salucloud.com/v4/price_lists/save/',
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS => array('access_token' => $access_token, 'name' => $name, 'code' => $code),
+            )
+        );
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
+    }
+
+    public function products_types()
+    {
+        $access_token = 'x'; //token de /v4/sessions/
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://api.salucloud.com/v4/products/types/',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => array('access_token' => $access_token),
+        )
+        );
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
+    }
+
+    public function products_save(){
+
+        $access_token='x';
+        $code='';//oblgatorio]
+        $name='';//[obligatorio]
+        $type='';//[obligatorio]
+        $product_id='';  //[product_id][obligatorio cuando es paquete] product_id
+        $test_class_id='';//tests[test_class_id] [obligatorio cuando es tipo plantilla]
+        $test_uom=''; //tests[uom] [obligatorio cuando es tipo plantilla]
+        $tests_sample_id= ''; //tests[sample_id] [obligatorio cuando es tipo plantilla]
+        $tests_order='';// tests[order] [obligatorio cuando es tipo plantilla]
+        $test_class_id=''; //[obligatorio cuando es tipo plantilla]
+        $sample_id=''; //[obligatorio cuando es tipo plantilla]
+        $curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://api.salucloud.com/v4/products/save/',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS => array('access_token' => $access_token,'code' => $code,'name' => $name,'type' => $type,
+                              'products[product_id]' => $product_id,'tests[test_class_id]' => $test_class_id,'tests[uom]' => $test_uom,
+                              'tests[sample_id]' => $tests_sample_id,'tests[order]' => $tests_order,'test_class_id' => $test_class_id,'sample_id' => $sample_id),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+    }
 }

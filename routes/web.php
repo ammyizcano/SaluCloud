@@ -48,6 +48,16 @@ Route::post('/Facturacion/invoices/cancel', [FacturacionController::class, 'canc
 Route::post('/Facturacion/payment/save', [FacturacionController::class, 'payment_save'])->name('payment.save');
 Route::post('/Facturacion/credit_notes', [FacturacionController::class, 'credit_notes'])->name('credit_notes');
 
+/** Controlador Facturación Datos Maestros */
+
+Route::post('/Facturacion/branches', [FacturacionController::class, 'branches'])->name('branches');
+Route::post('/Facturacion/referrers', [FacturacionController::class, 'referrers'])->name('referrers');
+Route::post('/Facturacion/classification', [FacturacionController::class, 'classification'])->name('classification');
+Route::post('/Facturacion/price_lists', [FacturacionController::class, 'price_lists'])->name('price_lists');
+Route::post('/Facturacion/price_lists/save', [FacturacionController::class, 'price_lists_save'])->name('price_lists.save');
+Route::post('/Facturacion/products/types', [FacturacionController::class, 'products_types'])->name('products/types');
+Route::post('/Facturacion/products/save', [FacturacionController::class, 'products_save'])->name('products/save');
+
 
 
 /** Controlador Laboratorio */
