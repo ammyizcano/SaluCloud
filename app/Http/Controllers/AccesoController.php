@@ -9,10 +9,11 @@ class AccesoController extends Controller
 {
     public function login(Request $request)
     {
+        //$array= array('client_id' => '1', $client_secret => 'x', $username => 'admin', $password => 'xyzbdhjsmnamndbdb');
 
-        $client_id="1";
-        $client_secret="x";
-        $username="admin";
+        $client_id = "11";
+        $client_secret="xxytttxyittxtxxxxxxxxkycxrkkkkkkkkkkkkkkky";
+         $username="admin";
         $password="vsxhdsnsbsam";
 
 
@@ -28,13 +29,13 @@ class AccesoController extends Controller
           CURLOPT_FOLLOWLOCATION => true,
           CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
           CURLOPT_CUSTOMREQUEST => 'POST',
-          CURLOPT_POSTFIELDS => array($client_id),
+          CURLOPT_POSTFIELDS => array('client_id' => $client_id, 'client_secret' => $client_secret, 'username' => $username, 'password' => $password),
         ));
         
         $response = curl_exec($curl);
         
         curl_close($curl);
-       dd ($response);
+         echo $response;
     }
 
 
