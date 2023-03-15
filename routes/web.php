@@ -42,9 +42,9 @@ Route::post('/patients/save', [PacientesController::class, 'patients_save'])->na
 
 /** Controlador Facturación*/
 Route::post('/Facturacion/invoices', [FacturacionController::class, 'invoices'])->name('invoices');
-Route::post('/Facturacion/invoices', [FacturacionController::class, 'store'])->name('store');
-Route::post('/Facturacion/remove', [FacturacionController::class, 'remove'])->name('remove');
-Route::post('/Facturacion/cancel', [FacturacionController::class, 'cancel'])->name('cancel');
+Route::post('/Facturacion/invoices/store', [FacturacionController::class, 'store'])->name('invoices.store');
+Route::post('/Facturacion/invoices/remove', [FacturacionController::class, 'remove'])->name('invoices.remove');
+Route::post('/Facturacion/invoices/cancel', [FacturacionController::class, 'cancel'])->name('invoices.cancel');
 Route::post('/Facturacion/payment/save', [FacturacionController::class, 'payment_save'])->name('payment.save');
 Route::post('/Facturacion/credit_notes', [FacturacionController::class, 'credit_notes'])->name('credit_notes');
 
