@@ -18,6 +18,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/** Controlador Acceso*/
 Route::post('/login', [AccesoController::class, 'login'])->name('acceso.login');
 
-Route::post('/patients', [AccesoController::class, ''])->name('acceso.login');
+/** Controlador Locales*/
+
+
+/** Controlador Pacientes*/
+Route::post('/patients', [PacientesController::class, 'patients'])->name('pacientes');
+
+Route::post('/patients/save', [PacientesController::class, 'patients_save'])->name('pacientes.save');
+
+
+
+
+/** Controlador Facturación*/
+
+
+
+
+/** Controlador Laboratorio */
