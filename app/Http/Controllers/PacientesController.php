@@ -32,7 +32,8 @@ class PacientesController extends Controller
         $response = curl_exec($curl);
         
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function patients_save (Request $request) {
@@ -65,7 +66,7 @@ class PacientesController extends Controller
       $response = curl_exec($curl);
       
       curl_close($curl);
-      echo $response;
-      
+      $data = json_decode($response);
+      dd($data);
 }
 }
