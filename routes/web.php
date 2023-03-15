@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::post('/login', [AccesoController::class, 'login'])->name('acceso.login');
+
+Route::post('/patients', [AccesoController::class, ''])->name('acceso.login');
