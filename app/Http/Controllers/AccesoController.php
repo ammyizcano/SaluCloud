@@ -35,7 +35,8 @@ class AccesoController extends Controller
         $response = curl_exec($curl);
         
         curl_close($curl);
-         echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
 
@@ -64,8 +65,8 @@ class AccesoController extends Controller
       $response = curl_exec($curl);
       
       curl_close($curl);
-      echo $response;
-      
+      $data = json_decode($response);
+      dd($data);
     }
 
 
@@ -91,7 +92,8 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 
 curl_close($curl);
-echo $response;
+$data = json_decode($response);
+dd($data);
 
     }
 }

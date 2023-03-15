@@ -32,7 +32,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
 
@@ -66,8 +67,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
-
+    $data = json_decode($response);
+    dd($data);
 
 
 
@@ -101,7 +102,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
 
@@ -137,7 +139,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
 
@@ -174,7 +177,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
 
@@ -209,7 +213,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
   }
@@ -245,7 +250,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
 
@@ -278,7 +284,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
   }
@@ -311,7 +318,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
 
@@ -344,7 +352,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
 
@@ -378,7 +387,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
   }
 
@@ -408,7 +418,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
   }
 
   public function proforma_canceled(Request $request)
@@ -437,7 +448,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
   }
   public function invoice_canceled(Request $request)
@@ -465,7 +477,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
   }
 
@@ -498,7 +511,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
   }
 
@@ -529,7 +543,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
   }
 
@@ -560,7 +575,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
   }
@@ -592,7 +608,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
   }
@@ -623,7 +640,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
   }
@@ -653,7 +671,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
   }
   public function order_section_validated(Request $request)
@@ -682,7 +701,8 @@ class WebhooksController extends Controller
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+    $data = json_decode($response);
+    dd($data);
 
 
   }
