@@ -57,8 +57,10 @@ Route::post('/Facturacion/classification', [FacturacionController::class, 'class
 Route::post('/Facturacion/price_lists', [FacturacionController::class, 'price_lists'])->name('price_lists');
 Route::post('/Facturacion/price_lists/save', [FacturacionController::class, 'price_lists_save'])->name('price_lists.save');
 Route::post('/Facturacion/products/types', [FacturacionController::class, 'products_types'])->name('products/types');
-Route::post('/Facturacion/products/save', [FacturacionController::class, 'products_save'])->name('products/save');
-
+Route::post('/Facturacion/products', [FacturacionController::class, 'products'])->name('products');
+Route::post('/Facturacion/products/save', [FacturacionController::class, 'products_save'])->name('products.save');
+Route::post('/Facturacion/products/price/save', [FacturacionController::class, 'price_save'])->name('products.price.save');
+Route::post('/Facturacion/payment_methods', [FacturacionController::class, 'payment_methods'])->name('payment_methods');
 
 
 /** Controlador Laboratorio */
@@ -99,4 +101,19 @@ Route::post('/product/created', [WebhooksController::class, 'product_created'])-
 Route::post('/product/updated', [WebhooksController::class, 'product_updated'])->name('product.updated');
 Route::post('/product/code/updated', [WebhooksController::class, 'product_code_updated'])->name('product.code.updated');
 Route::post('/invoice/created', [WebhooksController::class,'invoice_created'])->name('invoice.created');
+
+Route::post('/proforma/created', [WebhooksController::class,'proforma_created'])->name('proforma.created');
+Route::post('/proforma/canceled', [WebhooksController::class,'proforma_canceled'])->name('proforma.canceled');
+Route::post('/invoice/canceled', [WebhooksController::class,'invoice_canceled'])->name('invoice.canceled');
+Route::post('/payment/created', [WebhooksController::class,'payment_created'])->name('payment.created');
+Route::post('/payment/canceled', [WebhooksController::class,'payment_canceled'])->name('payment.canceled');
+Route::post('/credit/note/create', [WebhooksController::class,'credit_note_create'])->name('credit.note.create');
+Route::post('/credit/note/updated', [WebhooksController::class,'credit_note_updated'])->name('credit.note.updated');
+Route::post('/lab/order/created', [WebhooksController::class,'lab_order_created'])->name('lab.order.created');
+Route::post('/lab/order/closed', [WebhooksController::class,'lab_order_closed'])->name('lab.order.closed');
+Route::post('/order/section/validated', [WebhooksController::class,'order_section_validated'])->name('order.section.validated');
+
+
+
+
 

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class LocalesController extends Controller
 {
-    public function identifications()
+    public function identifications(Request $request)
     {
         $access_token = "x"; //
 
@@ -35,7 +35,7 @@ class LocalesController extends Controller
 
     }
 
-    public function phones_country_codes()
+    public function phones_country_codes(Request $request)
     {
         $access_token = "x"; //
         $curl = curl_init();
