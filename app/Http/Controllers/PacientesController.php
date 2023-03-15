@@ -38,7 +38,7 @@ class PacientesController extends Controller
     public function patients_save (Request $request) {
 
 
-      $access_token ="";
+      $access_token ="x";
       $type ="1";
       $identification ="";
       $birthdate="";

@@ -10,7 +10,7 @@ class LaboratorioController extends Controller
     {
       
 
-        $acess_token="";
+        $acess_token="x";
         $pagination_info="1";
         $page="1";
         $limit="100";
@@ -48,7 +48,7 @@ class LaboratorioController extends Controller
     public function laboratory_orders_status (Request $request)
     {
 
-       $access_token="";
+       $access_token="x";
        $pagination_info ="1";
        $page="1";
        $limit ="100";
@@ -91,7 +91,7 @@ class LaboratorioController extends Controller
      
 
 
-       $access_token="";
+       $access_token="x";
        $page="1";
        $limit ="10";
        $date_start ="";
@@ -128,7 +128,7 @@ class LaboratorioController extends Controller
     public function laboratory_orders_sample_questionnaire (Request $request)
     {
 
-        $access_token="";
+        $access_token="x";
         $pagination_info ="1";
         $page="1";
         $limit ="100";
@@ -160,7 +160,7 @@ class LaboratorioController extends Controller
     {
 
        
-        $acess_token=""; 
+        $acess_token="x"; 
         $order_id=""; 
 
 
@@ -194,7 +194,7 @@ class LaboratorioController extends Controller
     {
            
 
-        $acess_token=""; 
+        $acess_token="x"; 
         $patient_id="";
         $test_id="27";
 
@@ -231,7 +231,7 @@ class LaboratorioController extends Controller
     {
 
 
-        $acess_token=""; 
+        $acess_token="x"; 
         $branch_id="278"; 
         $status_id="5"; 
         $order_sample_id ="";
@@ -267,7 +267,7 @@ class LaboratorioController extends Controller
     public function laboratory_orders_sample_confirm (Request $request)
     {
 
-        $acess_token=""; 
+        $acess_token="x"; 
         $branch_id="278"; 
         $status_id="5"; 
         $order_sample_id ="4244325";
@@ -310,7 +310,7 @@ class LaboratorioController extends Controller
        
 
 
-        $acess_token=""; 
+        $acess_token="x"; 
         $branch_id="278"; 
         $status_id="5"; 
         $order_sample_id ="4244325-2";
@@ -383,7 +383,7 @@ class LaboratorioController extends Controller
     public function laboratory_samples (Request $request)
     {
 
-        $acess_token=""; 
+        $acess_token="x"; 
 
         
 
