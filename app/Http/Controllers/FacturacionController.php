@@ -43,7 +43,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function store(Request $request)
@@ -91,7 +92,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function remove(Request $request)
@@ -122,7 +124,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
     public function cancel(Request $request)
     {
@@ -149,7 +152,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function payment_save(Request $request)
@@ -187,7 +191,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
 
     }
 
@@ -221,7 +226,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function branches(Request $request)
@@ -252,7 +258,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function referrers(Request $request)
@@ -282,7 +289,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function classification(Request $request)
@@ -313,7 +321,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function price_lists(Request $request)
@@ -344,7 +353,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function price_lists_save(Request $request)
@@ -372,7 +382,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function products_types(Request $request)
@@ -479,7 +490,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function price_save(Request $request)
@@ -510,7 +522,8 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 
     public function payment_methods(Request $request)
@@ -534,6 +547,7 @@ class FacturacionController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        echo $response;
+        $data = json_decode($response);
+        dd($data);
     }
 }
