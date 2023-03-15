@@ -5,6 +5,7 @@ use App\Http\Controllers\FacturacionController;
 use App\Http\Controllers\LaboratorioController;
 use App\Http\Controllers\LocalesController;
 use App\Http\Controllers\PacientesController;
+use App\Http\Controllers\WebhooksController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -74,3 +75,18 @@ Route::post('/laboratory/orders/samples/confirm', [LaboratorioController::class,
 Route::post('/laboratory/test_classes', [LaboratorioController::class, 'laboratory_test_classes'])->name('laboratory.test.classes');
 
 Route::post('/laboratory/samples', [LaboratorioController::class, 'laboratory_samples'])->name('laboratory.samples');
+
+
+/** Controlador Webhooks */
+Route::post('/branch/created', [WebhooksController::class, 'branch_created'])->name('branch.created');
+Route::post('/branch/updated', [WebhooksoController::class, 'branch_updated'])->name('branch.updated');
+Route::post('/patient/created', [WebhooksController::class, 'patient_created'])->name('patient.created');
+Route::post('/patient/updated', [WebhooksController::class, 'patient_updated'])->name('patient.updated');
+Route::post('/price/list/created', [WebhooksController::class, 'price_list_created'])->name('price.list.created');
+Route::post('/price/list/updated', [WebhooksController::class, 'price_list_updated'])->name('price.list.updated');
+Route::post('/price/updated', [WebhooksController::class, 'price_updated'])->name('price.updated');
+Route::post('/product/created', [WebhooksController::class, 'product_created'])->name('product.created');
+Route::post('/product/updated', [WebhooksController::class, 'product_updated'])->name('product.updated');
+Route::post('/product/code/updated', [WebhooksController::class, 'product_code_updated'])->name('product.code.updated');
+Route::post('/invoice/created', [WebhooksController::class,'invoice_created'])->name('invoice.created');
+

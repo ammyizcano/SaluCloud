@@ -10,17 +10,17 @@ class LaboratorioController extends Controller
     {
       
 
-        $acess_token="x";
-        $pagination_info="1";
-        $page="1";
-        $limit="100";
-        $order_id="";
-        $date_start="";
-        $date_end="";
-        $patient_id="";
-        $branch_id="";
-        $status_id="2";
-        $results="1";
+        $acess_token='x';
+        $pagination_info='1';
+        $page='1';
+        $limit='100';
+        $order_id='';
+        $date_start='';
+        $date_end='';
+        $patient_id='';
+        $branch_id='';
+        $status_id='2';
+        $results='1';
 
 
 
@@ -48,17 +48,17 @@ class LaboratorioController extends Controller
     public function laboratory_orders_status (Request $request)
     {
 
-       $access_token="x";
-       $pagination_info ="1";
-       $page="1";
-       $limit ="100";
-       $orden_id ="";
-       $date_start ="";
-       $date_end ="";
-       $patient_id="";
-       $branch_id ="";
-       $status_id ="2";
-       $rsults ="1";
+       $access_token='x';
+       $pagination_info ='1';
+       $page='1';
+       $limit ='100';
+       $orden_id ='';
+       $date_start ='';
+       $date_end ='';
+       $patient_id='';
+       $branch_id ='';
+       $status_id ='2';
+       $rsults ='1';
 
 
 
@@ -91,12 +91,12 @@ class LaboratorioController extends Controller
      
 
 
-       $access_token="x";
-       $page="1";
-       $limit ="10";
-       $date_start ="";
-       $date_end ="";
-       $branch_id ="";
+       $access_token='1';
+       $page='1';
+       $limit ='10';
+       $date_start ='';
+       $date_end ='';
+       $branch_id ='';
     
 
 
@@ -128,11 +128,11 @@ class LaboratorioController extends Controller
     public function laboratory_orders_sample_questionnaire (Request $request)
     {
 
-        $access_token="x";
-        $pagination_info ="1";
-        $page="1";
-        $limit ="100";
-        $orden_samples[] ="";
+        $access_token='x';
+        $pagination_info ='1';
+        $page='1';
+        $limit ='100';
+        $orden_samples[] ='';
        
         $curl = curl_init();
         
@@ -160,8 +160,8 @@ class LaboratorioController extends Controller
     {
 
        
-        $acess_token="x"; 
-        $order_id=""; 
+        $acess_token='x'; 
+        $order_id=''; 
 
 
 
@@ -194,9 +194,9 @@ class LaboratorioController extends Controller
     {
            
 
-        $acess_token="x"; 
-        $patient_id="";
-        $test_id="27";
+        $acess_token='x'; 
+        $patient_id='';
+        $test_id='27';
 
 
 
@@ -231,12 +231,12 @@ class LaboratorioController extends Controller
     {
 
 
-        $acess_token="x"; 
-        $branch_id="278"; 
-        $status_id="5"; 
-        $order_sample_id ="";
-        $comments="";
-        $fields[91]= "answer";
+        $acess_token='x'; 
+        $branch_id='278'; 
+        $status_id='5'; 
+        $order_sample_id ='';
+        $comments='';
+        $fields[91]= 'answer';
 
        
 
@@ -267,14 +267,14 @@ class LaboratorioController extends Controller
     public function laboratory_orders_sample_confirm (Request $request)
     {
 
-        $acess_token="x"; 
-        $branch_id="278"; 
-        $status_id="5"; 
-        $order_sample_id ="4244325";
-        $comments="comments";
-        $fields[91][field_id]= "91";
-        $fields[91][result]= "answer123 linked";
-        $fields[91][order_section_id]= "7227124";
+        $acess_token='x'; 
+        $branch_id='278'; 
+        $status_id='5'; 
+        $order_sample_id ='4244325';
+        $comments='comments';
+        $fields[91][field_id]= '91';
+        $fields[91][result]= 'answer123 linked';
+        $fields[91][order_section_id]= '7227124';
         
 
 
@@ -310,14 +310,14 @@ class LaboratorioController extends Controller
        
 
 
-        $acess_token="x"; 
-        $branch_id="278"; 
-        $status_id="5"; 
-        $order_sample_id ="4244325-2";
-        $comments="comments";
-        $fields[91][field_id]= "91";
-        $fields[91][result]= "answer123 linked";
-        $fields[91][order_section_id]= "7227124";
+        $acess_token='x'; 
+        $branch_id='278'; 
+        $status_id='5'; 
+        $order_sample_id ='4244325-2';
+        $comments='comments';
+        $fields[91][field_id]='91';
+        $fields[91][result]= 'answer123 linked';
+        $fields[91][order_section_id]= '7227124';
         
 
 
@@ -353,7 +353,7 @@ class LaboratorioController extends Controller
     {
 
 
-        $acess_token=""; 
+        $acess_token='x'; 
 
 
 
@@ -383,7 +383,7 @@ class LaboratorioController extends Controller
     public function laboratory_samples (Request $request)
     {
 
-        $acess_token="x"; 
+        $acess_token='x'; 
 
         
 

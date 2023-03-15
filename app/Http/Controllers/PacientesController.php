@@ -9,11 +9,11 @@ class PacientesController extends Controller
     public function patients (Request $request) {
 
 
-        $access_token ="x";
-        $page ="1";
-        $limit ="10";
-        $patient_id ="";
-        $search ="xxxxxxx";
+        $access_token ='x';
+        $page ='1';
+        $limit ='10';
+        $patient_id ='';
+        $search ='';
        
         $curl = curl_init();
         
@@ -38,13 +38,13 @@ class PacientesController extends Controller
     public function patients_save (Request $request) {
 
 
-      $access_token ="x";
-      $type ="1";
-      $identification ="";
-      $birthdate="";
-      $gender="";
-      $email="";
-      $mobile="";
+      $access_token ='x';
+      $type ='1';
+      $identification ='';
+      $birthdate='';
+      $gender='';
+      $email='';
+      $mobile='';
     
       
       $curl = curl_init();
