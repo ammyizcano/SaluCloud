@@ -26,7 +26,7 @@ class PacientesController extends Controller
           CURLOPT_FOLLOWLOCATION => true,
           CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
           CURLOPT_CUSTOMREQUEST => 'POST',
-          CURLOPT_POSTFIELDS => array('acess_token'=> $access_token,'page'=> $page, 'limit'=> $limit,'patient_id'=> $patient_id,'search'=> $search,),
+          CURLOPT_POSTFIELDS => array('access_token'=> $access_token,'page'=> $page, 'limit'=> $limit,'patient_id'=> $patient_id,'search'=> $search,),
         ));
         
         $response = curl_exec($curl);
@@ -59,7 +59,7 @@ class PacientesController extends Controller
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => 'POST',
-        CURLOPT_POSTFIELDS => array(  'acess_token'=> $access_token,'type'=> $type, 'identification' => $identification, 'birthdate' => $birthdate, 'gender' => $gender, 'email'=> $email, 'mobile'=> $mobile
+        CURLOPT_POSTFIELDS => array(  'access_token'=> $access_token,'type'=> $type, 'identification' => $identification, 'birthdate' => $birthdate, 'gender' => $gender, 'email'=> $email, 'mobile'=> $mobile
       ),
       ));
       

@@ -17,7 +17,7 @@
     </head>
     <body class="antialiased">
        
-       <form method="POST" action="{{route('products')}}">
+       <form method="POST" action="{{route('invoices.remove')}}">
         @csrf
         <button class="btn btn-info">Referrers</button>
        </form>
