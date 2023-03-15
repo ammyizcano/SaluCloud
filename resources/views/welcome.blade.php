@@ -17,9 +17,9 @@
     </head>
     <body class="antialiased">
        
-       <form method="POST" action="{{route('pacientes')}}">
+       <form method="POST" action="{{route('products')}}">
         @csrf
-        <button class="btn btn-info">Login</button>
+        <button class="btn btn-info">Referrers</button>
        </form>
     </body>
 </html>
