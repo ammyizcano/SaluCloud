@@ -43,7 +43,7 @@ class AccesoController extends Controller
     public function logout (Request $request)
     {
     
-      $access_token ="";
+      $access_token ="x";
       
       
       
@@ -72,7 +72,7 @@ class AccesoController extends Controller
     public function session_check (Request $request)
     {
 
-      $access_token ="";
+      $access_token ="x";
 
 $curl = curl_init();
 

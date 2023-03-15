@@ -9,11 +9,11 @@ class PacientesController extends Controller
     public function patients (Request $request) {
 
 
-        $access_token ="";
+        $access_token ="x";
         $page ="1";
         $limit ="10";
         $patient_id ="";
-        $search ="";
+        $search ="xxxxxxx";
        
         $curl = curl_init();
         
